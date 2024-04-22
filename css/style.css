@@ -1,0 +1,255 @@
+/* Estilo global */
+* {
+    text-decoration: none; /* Eliminar subrayado a toda la página */
+    padding: 1px;
+}
+
+
+/* Estilo específico para el cuerpo */
+body {
+    line-height: 1.375rem;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+/*Extras*/
+.extras{
+    display: flex;
+    justify-content: flex-end;
+    margin: -60px 69px -40px;
+    font-family: "Secondary-Font-Bold", "NotoSans-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.extras ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+}
+
+.extras ul li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 30px; /* Agrega separación horizontal entre los enlaces */
+}
+
+.extras ul li a:hover {
+    text-decoration: underline;
+}
+
+/*Header*/
+header {
+    background-color: #f48322;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente los elementos */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/*Navegacion*/
+nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    height: 3em;
+    padding: 0;
+    margin: 0 20px 33px ;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    border: none;
+    margin: 0 30px; /* Agrega separación horizontal entre los enlaces */
+    height: 60%;
+    background-color: transparent; /* Fondo transparente */
+}
+nav ul li a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+/*Busqueda*/
+.busqueda-cuenta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja-busqueda {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.boton-login {
+    background-color: #f48322;
+    color: #000000;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*portada*/
+.portada img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #000000;
+    margin: 0;
+    padding: 30px 0; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.sub {
+    font-size: 30px;
+    color: #f48322;
+    margin-bottom: 20px; /* Añadir espacio inferior */
+    text-align: center; /* Centrar el texto */
+}
+
+.Titulo-Footer {
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columna */
+    gap: 20px; /* Añadir espacio entre los elementos */
+    margin-bottom: 20px; /* Añadir espacio inferior */
+    text-align: center; /* Centrar el texto */
+}
+
+.Titulo-Footer a span{
+    font-size: 40px;
+    list-style-type: none;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.correo {
+    position: relative;
+}
+
+.caja-busqueda-footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.caja-busqueda-footer input[type="text"] {
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columna */
+    padding: 8px 30px 8px 8px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; 
+    margin-right: 10px;  
+}
+
+.caja-busqueda-footer button[type="submit"] {
+    position: absolute; /* Posiciona el botón absolutamente */
+    right: 146px; /* Alinea el botón a la derecha */
+    top: 2.3px; /* Alinea el botón arriba */
+    background-color: #f48322;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/*Segundo footer*/
+.faq-preguntas-frecuentes {
+    display: flex;
+    gap: 10px; 
+}
+
+.sub-faq {
+    font-size: 30px;
+    color: #f48322;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.faq-preguntas-frecuentes ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; 
+}
+
+.faq-preguntas-frecuentes ul li {
+    margin: 10px 0; 
+}
+
+.faq-preguntas-frecuentes ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* Path: css/colores.css */
+
+/*Paleta de colores*/
+.blanco {
+    color: #ffffff; /* RGB: (255,255,255) */
+}
+
+/* Gris */
+.gris {
+    color: #cecece; /* RGB: (206,206,206) */
+}
+
+
+/* Naranja */
+.naranja {
+    color: #f48322; /* RGB: (244,131,34) */
+}
+
+/* Rojo */
+.rojo {
+    color: #f53f1f; /* RGB: (245,63,31) */
+}
+
+/* Negro */
+.negro {
+    color: #6b0bb915; /* RGB: (0,0,0) */
+}
+
+p {
+    font-weight: bold;
+    color: red;
+    font-size: 1.5em;
+}

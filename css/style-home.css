@@ -1,0 +1,361 @@
+body{
+    background-color: #000000;
+    overflow: hidden;
+}
+
+
+nav{
+    height: 95px;
+}
+
+
+/*Extras*/
+.extras{
+    display: flex;
+    justify-content: space-between;
+    margin: -35px -10px 0 0;
+    font-family: "Secondary-Font-Bold", "NotoSans-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.extras ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+}
+
+.extras ul li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 30px; /* Agrega separación horizontal entre los enlaces */
+}
+
+.extras ul li a:hover {
+    text-decoration: underline;
+}
+
+.extras img{
+    margin: 10px 10px;
+    width: 60px;
+    height: 40px;
+
+}
+
+/*Boton*/
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.boton-ingreso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.boton-ingreso a{
+    background-color: #f48322;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.boton-ingreso a:hover{
+    background-color: #f53f1f;
+    color: #ffffff;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0 10px;
+    padding: 20px;
+    gap: 10px;
+}
+
+/*Card*/
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%; 
+    max-width: 200px; 
+    height: auto;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 84%; 
+    height: 84%; 
+    background-color: rgba(14, 12, 12, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: inherit;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .icono1,
+.overlay .icono2 {
+    font-size: 24px;
+    color: white;
+    margin: 0 25px; 
+    z-index: 1; 
+}
+
+.card a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: -20px;
+}
+
+.redes a img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+/*Query para celulares*/
+@media (max-width: 767px) {
+    body {
+        overflow: auto; /* Ajusta el overflow según necesites */
+    }
+
+    nav {
+        height: auto; /* Ajusta la altura del nav según necesites */
+    }
+
+    .extras {
+        margin: 0; /* Ajusta el margen según necesites */
+        padding: 10px; /* Ajusta el padding según necesites */
+    }
+
+    .extras ul li a {
+        margin: 0 10px; /* Ajusta el margen según necesites */
+    }
+
+    .extras img {
+        margin: 5px; /* Ajusta el margen según necesites */
+        width: 40px; /* Ajusta el ancho según necesites */
+        height: 30px; /* Ajusta la altura según necesites */
+    }
+
+    .buscador {
+        margin-top: 50px; /* Ajusta el margen superior según necesites */
+    }
+
+    .boton-ingreso {
+        margin-top: 10px; /* Ajusta el margen superior según necesites */
+    }
+
+    .boton-ingreso a {
+        padding: 8px 16px; /* Ajusta el padding según necesites */
+        font-size: 1em; /* Ajusta el tamaño de fuente según necesites */
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta las columnas del grid según necesites */
+    }
+
+    .card {
+        max-width: 150px; /* Ajusta el ancho máximo según necesites */
+    }
+
+    .overlay {
+        top: 20px; /* Ajusta la posición superior según necesites */
+        left: 20px; /* Ajusta la posición izquierda según necesites */
+        width: 80%; /* Ajusta el ancho según necesites */
+        height: 80%; /* Ajusta la altura según necesites */
+    }
+
+    .overlay .icono1,
+    .overlay .icono2 {
+        font-size: 20px; /* Ajusta el tamaño de fuente según necesites */
+    }
+
+    .card a {
+        font-size: 0.8em; /* Ajusta el tamaño de fuente según necesites */
+    }
+
+    footer {
+        margin-top: 0; /* Ajusta el margen superior según necesites */
+    }
+
+    .redes a img {
+        width: 20px; /* Ajusta el ancho según necesites */
+        height: 20px; /* Ajusta la altura según necesites */
+        margin: 0 5px; /* Ajusta el margen según necesites */
+    }
+}
+
+
+/*Query para tablet*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        overflow: auto; /* Ajusta el overflow según necesites */
+    }
+
+    nav {
+        height: auto; /* Ajusta la altura del nav según necesites */
+    }
+
+    .extras {
+        margin: -25px -10px 0 0; /* Ajusta el margen según necesites */
+        padding: 10px; /* Ajusta el padding según necesites */
+    }
+
+    .extras ul li a {
+        margin: 0 20px; /* Ajusta el margen según necesites */
+    }
+
+    .extras img {
+        margin: 5px 5px; /* Ajusta el margen según necesites */
+        width: 50px; /* Ajusta el ancho según necesites */
+        height: 35px; /* Ajusta la altura según necesites */
+    }
+
+    .buscador {
+        margin-top: 100px; /* Ajusta el margen superior según necesites */
+    }
+
+    .boton-ingreso {
+        margin-top: 10px; /* Ajusta el margen superior según necesites */
+    }
+
+    .boton-ingreso a {
+        padding: 8px 16px; /* Ajusta el padding según necesites */
+        font-size: 1em; /* Ajusta el tamaño de fuente según necesites */
+    }
+
+    .contenedor {
+        gap: 5px; /* Ajusta el espacio entre elementos según necesites */
+    }
+
+    .card {
+        max-width: 180px; /* Ajusta el ancho máximo según necesites */
+    }
+
+    .overlay {
+        top: 20px; /* Ajusta la posición superior según necesites */
+        left: 20px; /* Ajusta la posición izquierda según necesites */
+        width: 83%; /* Ajusta el ancho según necesites */
+        height: 83%; /* Ajusta la altura según necesites */
+    }
+
+    .overlay .icono1,
+    .overlay .icono2 {
+        font-size: 20px; /* Ajusta el tamaño de fuente según necesites */
+    }
+
+    .card a {
+        font-size: 0.8em; /* Ajusta el tamaño de fuente según necesites */
+    }
+
+    footer {
+        margin-top: 0; /* Ajusta el margen superior según necesites */
+    }
+
+    .redes a img {
+        width: 25px; /* Ajusta el ancho según necesites */
+        height: 25px; /* Ajusta la altura según necesites */
+        margin: 0 5px; /* Ajusta el margen según necesites */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Paleta de colores*/
+.blanco {
+    color: #ffffff; /* RGB: (255,255,255) */
+}
+
+/* Gris */
+.gris {
+    color: #cecece; /* RGB: (206,206,206) */
+}
+
+
+/* Naranja */
+.naranja {
+    color: #f48322; /* RGB: (244,131,34) */
+}
+
+/* Rojo */
+.rojo {
+    color: #f53f1f; /* RGB: (245,63,31) */
+}
+
+/* Negro */
+.negro {
+    color: #6b0bb915; /* RGB: (0,0,0) */
+}
+
+
+
+
+
+
+
