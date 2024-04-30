@@ -108,14 +108,99 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/*portada*/
-.portada img{
+/*Main*/
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.portada {
+    grid-area: 1 / 1 / 2 / 4; /* fila inicial / columna inicial / fila final / columna final */
+    height: 300px;
+}
+
+.portada img {
     width: 100%;
-    height: 500px;
+    height: 100%;
     object-fit: cover;
     object-position: center;
-
 }
+
+.imagen-main{
+    grid-area: 2 / 1 / 3 / 1;
+    height: 300px;
+}
+
+.imagen-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+.imagen-main2{
+    grid-area: 3 / 3 / 3 / 3;
+    height: 300px;
+}
+
+.imagen-main2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+.contenido-1{
+    grid-area: 2 / 2 / 2 / 4; /* fila inicial / columna inicial / fila final / columna final */
+    height: 300px;
+}
+
+.contenido-1 h1{
+    font-size: 40px;
+    color: #f48322;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+.contenido-2{
+    grid-area: 3 / 1 / 3 / 3; /* fila inicial / columna inicial / fila final / columna final */
+    height: 300px;
+}
+
+.contenido-2 h1{
+    font-size: 40px;
+    color: #f48322;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos para el footer */
 footer {
