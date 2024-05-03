@@ -320,20 +320,6 @@ footer {
     text-align: center; /* Centrar el texto */
 }
 
-.Titulo-Footer {
-    display: flex;
-    flex-direction: column; /* Alinear los elementos en columna */
-    gap: 20px; /* Añadir espacio entre los elementos */
-    margin-bottom: 20px; /* Añadir espacio inferior */
-    text-align: center; /* Centrar el texto */
-}
-
-.Titulo-Footer a span{
-    font-size: 40px;
-    list-style-type: none;
-    color: #ffffff;
-    font-family: 'Bebas Neue', sans-serif;
-}
 
 .correo {
     position: relative;
@@ -356,8 +342,6 @@ footer {
     margin-right: 10px;  
 }
 
-
-
 /*Segundo footer*/
 .faq-preguntas-frecuentes {
     display: flex;
@@ -377,20 +361,23 @@ footer {
 .faq-preguntas-frecuentes ul {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: center; 
 }
 
 .faq-preguntas-frecuentes ul li {
-    margin: 10px 0; 
+    margin: 10px 0;
 }
 
 footer .faq-preguntas-frecuentes ul li a {
     color: #ffffff;
     text-decoration: none; 
-    font-size: 20px;    
+    font-size: 20px; 
+
+}
+footer .faq-preguntas-frecuentes ul {
+    list-style-type: none !important; /* Aumentar la especificidad */
 }
 
 
