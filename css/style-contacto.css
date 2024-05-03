@@ -1,0 +1,14 @@
+.mapa-ubicacion{
+    margin-top: 20px;
+}
+
+.formulario-contacto button{
+    margin-top: 20px;
+    background-color: #f48322;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 20px;
+}
