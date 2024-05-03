@@ -237,11 +237,41 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
+.contenido-1 h1{
+    font-size: 30px;
+    color: #000000;
+    font-family: 'inherit', sans-serif;
+    text-align: center;
+}
+
+.contenido-1 p{
+    font-size: 20px;
+    color: #000000;
+    font-family: 'rubik',sans-serif;
+    text-align: center;
+    font-size: 13px;
+}
+
 .contenido-2{
     grid-area: 2 / 1 / 2 / 1; /* fila inicial / columna inicial / fila final / columna final */
     width: auto;
     margin-left: 30px;
     margin-top: 10px;
+}
+
+.contenido-2 h1{
+    font-size: 30px;
+    color: #000000;
+    font-family: 'inherit', sans-serif;
+    text-align: center;
+}
+
+.contenido-2 p{
+    font-size: 20px;
+    color: #000000;
+    font-family: 'rubik',sans-serif;
+    text-align: center;
+    font-size: 13px;
 }
 
 .imagen-main2{
