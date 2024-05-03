@@ -58,7 +58,7 @@ nav ul li a {
 
 @media (max-width: 767px) {
     nav ul li a {
-        margin: 0 10px; 
+        margin: 5px; 
     }
 
 
@@ -108,6 +108,7 @@ nav ul li a:hover {
 
 .portada {
     height: 380px;
+    width: 100%;
 }
 
 .portada img {
@@ -213,6 +214,26 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
+/*media query para imagen-main*/
+
+@media (max-width: 767px) {
+    .imagen-main {
+        width: 100%; 
+        max-width: 380px;
+        max-height: 250px; 
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .imagen-main2 {
+        width: 100%; 
+        max-width: 380px;
+        max-height: 250px; 
+        margin-top: 10px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+}
 .imagen-main img {
     width: 100%;
     height: 100%; 
@@ -248,7 +269,6 @@ nav ul li a:hover {
     max-height: 250px; 
     margin-top: 10px;
     overflow: hidden;
-    margin: 30px;
 }
 
 .imagen-main2 img {
@@ -366,7 +386,12 @@ footer {
 
 
 
+.b-example-divider{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #f48322;
 
+}
 
 
 
