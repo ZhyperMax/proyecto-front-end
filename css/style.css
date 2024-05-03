@@ -10,10 +10,12 @@ body {
     line-height: 1.375rem;
     color: #ffffff;
     margin: 20px 0;
+    text-decoration: none; 
+
 }
 
 /*Extras*/
-.extras{
+.extras-menu{
     display: flex;
     justify-content: flex-end;
     margin: -60px 69px -40px;
@@ -24,14 +26,14 @@ body {
     padding: 20px;
 }
 
-.extras ul{
+.extras-menu ul{
     display: flex;
     list-style-type: none;
     padding: 0;
     height: 100%;
 }
 
-.extras ul li a {
+.extras-menu ul li a {
     display: block;
     text-align: center;
     padding: 10px;
@@ -40,7 +42,7 @@ body {
     margin: 0 30px; /* Agrega separación horizontal entre los enlaces */
 }
 
-.extras ul li a:hover {
+.extras-menu ul li a:hover {
     text-decoration: underline;
 }
 
@@ -131,7 +133,7 @@ nav ul li a:hover {
 
 /*card prueba*/
 
-.card{
+.cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +149,7 @@ nav ul li a:hover {
 }
 
 
-.card img{
+.cards img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -155,33 +157,33 @@ nav ul li a:hover {
     border-radius: 200px;
 }
 
-.card h2{
+.cards h2{
     font-size: 30px;
     color: #f48322;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
 }
 
-.card h5{
+.cards h5{
     font-size: 20px;
     color: #f48322;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
 }
 
-.card p{
+.cards p{
     font-size: 20px;
     color: #020202;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
 }
 
-.card:hover{
+.cards:hover{
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
-.card a{
+.cards a{
     background-color: #f48322;
     color: #ffffff;
     padding: 10px 20px;
@@ -209,42 +211,33 @@ nav ul li a:hover {
 
 /*Contenido*/
 
-.grid-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-.imagen-main{
-    grid-area: 1 / 1 / 1 / 3; /* fila inicial / columna inicial / fila final / columna final */
-    width: 13rem;
-    margin-left: 30px;
+.imagen-main {
+    width: 100%;
+    max-width: 600px; 
     margin-top: 10px;
 }
 
-.imagen-main img{
-    width: 800px;
-    height: 300px;
-    object-fit: cover;
+.imagen-main img {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
     border-radius: 10px;
 }
 
-.contenido-1{
-    grid-area: 1 / 3 / 1 / 3; /* fila inicial / columna inicial / fila final / columna final */
-    width: auto;
-    margin-left: 50px;
+
+.contenido-1 {
+    width: 100%; 
     margin-top: 10px;
 }
 
-.contenido-1 h1{
+.contenido-1 h1 {
     font-size: 30px;
     color: #000000;
     font-family: 'inherit', sans-serif;
     text-align: center;
 }
 
-.contenido-1 p{
+.contenido-1 p {
     font-size: 20px;
     color: #000000;
     font-family: 'rubik',sans-serif;
@@ -252,21 +245,33 @@ nav ul li a:hover {
     font-size: 13px;
 }
 
-.contenido-2{
-    grid-area: 2 / 1 / 2 / 1; /* fila inicial / columna inicial / fila final / columna final */
-    width: auto;
-    margin-left: 30px;
+
+.imagen-main2 {
+    width: 100%;
+    max-width: 600px; 
     margin-top: 10px;
 }
 
-.contenido-2 h1{
+.imagen-main2 img {
+    width: 100%;
+    max-width: 100%; 
+    border-radius: 10px;
+}
+
+
+.contenido-2 {
+    width: 100%; 
+    margin-top: 10px;
+}
+
+.contenido-2 h1 {
     font-size: 30px;
     color: #000000;
     font-family: 'inherit', sans-serif;
     text-align: center;
 }
 
-.contenido-2 p{
+.contenido-2 p {
     font-size: 20px;
     color: #000000;
     font-family: 'rubik',sans-serif;
@@ -274,19 +279,12 @@ nav ul li a:hover {
     font-size: 13px;
 }
 
-.imagen-main2{
-    grid-area: 2 / 2 / 2 / 3; /* fila inicial / columna inicial / fila final / columna final */
-    width: 13rem;
-    margin-left: 30px;
-    margin-top: 10px;
-}
 
-.imagen-main2 img{
-    width: 800px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
+
+
+
+
+
 
 
 
@@ -305,6 +303,8 @@ footer {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    height: auto;
+    width: 100%;
 }
 
 .sub {
@@ -366,6 +366,9 @@ footer {
 .faq-preguntas-frecuentes {
     display: flex;
     gap: 10px; 
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .sub-faq {
@@ -388,10 +391,12 @@ footer {
     margin: 10px 0; 
 }
 
-.faq-preguntas-frecuentes ul li a {
+footer .faq-preguntas-frecuentes ul li a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none; 
+    font-size: 20px;    
 }
+
 
 
 
