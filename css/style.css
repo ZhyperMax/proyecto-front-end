@@ -356,17 +356,7 @@ footer {
     margin-right: 10px;  
 }
 
-.caja-busqueda-footer button[type="submit"] {
-    position: absolute; /* Posiciona el botón absolutamente */
-    right: 146px; /* Alinea el botón a la derecha */
-    top: 2.3px; /* Alinea el botón arriba */
-    background-color: #f48322;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    color: white;
-    cursor: pointer;
-    padding: 8px;
-}
+
 
 /*Segundo footer*/
 .faq-preguntas-frecuentes {
