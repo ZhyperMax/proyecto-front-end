@@ -191,6 +191,22 @@ nav ul li a:hover {
 
 /*Media query para las card*/
 
+@media (max-width: 767px) {
+    .card h2,
+    .card p {
+        display: none; 
+    }
+    .card {
+        width: 100%; 
+        margin-left: 0; 
+    }
+
+    .card a{
+        margin-left: 0;
+    }
+
+}
+
 
 
 /*Contenido*/
