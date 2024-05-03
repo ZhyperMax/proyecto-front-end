@@ -112,15 +112,7 @@ nav ul li a:hover {
 
 /*Main*/
 
-.container-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
 .portada {
-    grid-area: 1 / 1 / 1 / 4; /* fila inicial / columna inicial / fila final / columna final */
     height: 380px;
 }
 
@@ -133,7 +125,7 @@ nav ul li a:hover {
 
 /*card prueba*/
 
-.cards{
+.card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,13 +135,13 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    margin-top: auto;
+    margin-top: 20px;
     width: 13rem;
     margin-left: 90px;
 }
 
 
-.cards img{
+.card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -157,33 +149,33 @@ nav ul li a:hover {
     border-radius: 200px;
 }
 
-.cards h2{
+.card h2{
     font-size: 30px;
     color: #f48322;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
 }
 
-.cards h5{
+.card h5{
     font-size: 20px;
     color: #f48322;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
 }
 
-.cards p{
+.card p{
     font-size: 20px;
     color: #020202;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
 }
 
-.cards:hover{
+.card:hover{
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
-.cards a{
+.card a{
     background-color: #f48322;
     color: #ffffff;
     padding: 10px 20px;
@@ -196,31 +188,25 @@ nav ul li a:hover {
     margin-left: 50px;
 }
 
-.card-2{
-    grid-area: 2 / 1 / 2 / 1;
-}
 
-.card-2{
-    grid-area: 2 / 2 / 2 / 2;
-}
+/*Media query para las card*/
 
-.card-2{
-    grid-area: 2 / 3 / 2 / 3;/* fila inicial / columna inicial / fila final / columna final */
-}
 
 
 /*Contenido*/
 
 .imagen-main {
     width: 100%;
-    max-width: 600px; 
+    max-width: 800px;
+    max-height: 250px; 
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .imagen-main img {
     width: 100%;
-    max-width: 100%; 
-    height: auto;
+    height: 100%; 
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -248,20 +234,24 @@ nav ul li a:hover {
 
 .imagen-main2 {
     width: 100%;
-    max-width: 600px; 
+    max-width: 800px;
+    max-height: 250px; 
     margin-top: 10px;
+    overflow: hidden;
+    margin: 30px;
 }
 
 .imagen-main2 img {
     width: 100%;
-    max-width: 100%; 
+    height: 100%; 
+    object-fit: cover;
     border-radius: 10px;
 }
 
 
 .contenido-2 {
     width: 100%; 
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .contenido-2 h1 {
