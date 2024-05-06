@@ -58,7 +58,7 @@ nav ul li a {
 
 @media (max-width: 767px) {
     nav ul li a {
-        margin: 5px; 
+        margin: 0; 
     }
 
 
