@@ -12,3 +12,8 @@
     cursor: pointer;
     border-radius: 20px;
 }
+
+.formulario-contacto .form-check-input{
+    margin-left: 10px;
+    margin-top: 8px;
+}
