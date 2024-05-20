@@ -1,6 +1,6 @@
 .contenedor-historia {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr; 
     grid-gap: 20px;
     margin: 20px;
 }
@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
     background-color: #f1f1f1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,6 +41,29 @@
 .foto-perfil img {
     max-width: 100%;
     width: 200px; 
-    height: auto;
+    height: 300px;
     border-radius: 20%; 
+}
+
+.foto-perfil h3{
+    font-size: 20px;
+    color: #f48322;
+    font-family: 'inherit', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Media para la historia */
+@media (max-width: 768px) {
+    .contenedor-historia {
+        display: block;
+    }
+
+    .historia .larga {
+        display: none;
+    }
+
+    .foto-perfil {
+        display: none;
+    }
 }
