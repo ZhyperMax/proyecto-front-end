@@ -54,7 +54,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 //Fin del formulario de contacto
 
 
-//Consumo de json
+//Consumo de json para lista de talleres amigos
 
 
 fetch('https://raw.githubusercontent.com/TetePrueba/api-talleres/main/talleres.json')
@@ -72,12 +72,17 @@ fetch('https://raw.githubusercontent.com/TetePrueba/api-talleres/main/talleres.j
             html += `
             <div class="taller">
                 <h2>${taller.nombre}</h2>
-                <p><strong>Dirección:</strong> ${taller.direccion}</p>
-                <p><strong>Detalles:</strong> ${taller.detalles}</p>
+                <p>Dirección: ${taller.direccion}</p>
+                <p>Detalles: ${taller.detalles}</p>
             </div>
             `;
         });
         document.getElementById('talleres').innerHTML = html;
     })
     .catch(error => console.log('Error:', error));
+
+//Fin del consumo de json
+
+
+
 
