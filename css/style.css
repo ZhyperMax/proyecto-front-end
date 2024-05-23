@@ -293,6 +293,15 @@ nav ul li a:hover {
     .seguir-instagram{
         display: block;
     }
+
+    .seguir-instagram a img {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .seguir-instagram a:hover img {
+        transform: rotate(360deg);
+    }
+
 }
 
 
