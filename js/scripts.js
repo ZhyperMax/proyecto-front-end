@@ -1,20 +1,17 @@
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Obtener los valores del formulario
     var nombre = document.getElementById("nombre").value;
     var email = document.getElementById("email").value;
     var mensaje = document.getElementById("mensaje").value;
     var suscripcion = document.getElementById("suscripcion").checked ? "Sí" : "No";
     var tema = document.getElementById("tema").value;
 
-    // Verificar que todos los campos estén completados
     if (nombre === "" || email === "" || mensaje === "" || tema === "" || suscripcion === "") {
         alert("Por favor complete todos los campos del formulario.");
         return;
     }
 
-    // Crear el contenido para el nuevo archivo HTML
     var newHtmlContent = `
     <!DOCTYPE html>
     <html lang="es">
@@ -34,17 +31,14 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     </html>
 `;
 
-    // Resetear el formulario
     document.getElementById("nombre").value = "";
     document.getElementById("email").value = "";
     document.getElementById("mensaje").value = "";
     document.getElementById("suscripcion").checked = false;
     document.getElementById("tema").value = "general";
 
-    // Mensaje de confirmacion
     alert("¡Formulario enviado exitosamente!");
 
-    // Abrir una nueva ventana con los datos
     var newWindow = window.open();
     newWindow.document.write(newHtmlContent);
     newWindow.document.close();
