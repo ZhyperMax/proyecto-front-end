@@ -12,7 +12,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
         return;
     }
 
-    var newHtmlContent = `
+    var Html = `
     <!DOCTYPE html>
     <html lang="es">
     <head>
@@ -39,9 +39,9 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
     alert("¡Formulario enviado exitosamente!");
 
-    var newWindow = window.open();
-    newWindow.document.write(newHtmlContent);
-    newWindow.document.close();
+    var nuevaVentana = window.open();
+    nuevaVentana.document.write(Html);
+    nuevaVentana.document.close();
     
 });
 
